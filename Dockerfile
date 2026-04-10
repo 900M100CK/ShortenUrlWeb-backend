@@ -23,6 +23,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-ENV ASPNETCORE_URLS=http://+:8080                   # ← Thêm dòng này
+ENV ASPNETCORE_URLS=http://+:8080
 
 ENTRYPOINT ["dotnet", "ShortenUrlWeb.dll"]
