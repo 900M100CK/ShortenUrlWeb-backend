@@ -12,7 +12,7 @@ namespace ShortenUrlWeb.Services
     public class ShortenUrlService : IShortenUrlService
     {
         private readonly IShortenUrlRepository _repository;
-        private const string Domain = "https://shortenurlweb-backend.onrender.com/"; // Đổi thành domain thực tế của bạn sau này
+        private const string Domain = "https://Localhost:5001/"; // Đổi thành domain thực tế của bạn sau này
 
         public ShortenUrlService(IShortenUrlRepository repository)
         {
